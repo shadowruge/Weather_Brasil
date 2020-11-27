@@ -1,6 +1,6 @@
 import requests
+from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
-
 
 class Temperature(object):
     def __init__(self, place):
@@ -17,8 +17,18 @@ class Temperature(object):
         temperature = scrap.find("div", class_="BNeawe").text
         return temperature
 
+linha ='-'*57
+
+x = datetime.now()
+dias = ('Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado', 'Domingo')
+print(linha)
+print("Hoje é", dias[x.weekday()])
+print("Data",x.day,"/", x.month,"/", x.year)
+print("Horas",x.hour ,":",x.minute,":",x.second)
 
 if __name__ == "__main__":
+    print(linha)
     print(Temperature("Brasilia \n"))
     print(Temperature("Sao_paulo \n"))
     print(Temperature("Rio_de_janeiro \n"))
+    print(linha)

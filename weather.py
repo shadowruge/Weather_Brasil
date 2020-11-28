@@ -1,4 +1,5 @@
 import requests
+import lista
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 

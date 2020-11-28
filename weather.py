@@ -14,8 +14,8 @@ class Temperature(object):
     def weather(self):
         url = f"https://www.google.com/search?&q=weather in {self.place}"
         req = requests.get(url)
-        scrap = BeautifulSoup(req.text, "html.parser")
-        temperature = scrap.find("div", class_="BNeawe").text
+        scrape = BeautifulSoup(req.text, "html.parser")
+        temperature = scrape.find("div", class_="BNeawe").text
         return temperature
 
 linha ='-'*57

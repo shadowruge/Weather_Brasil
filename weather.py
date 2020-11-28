@@ -29,7 +29,8 @@ print("Horas",x.hour ,":",x.minute,":",x.second)
 
 if __name__ == "__main__":
     print(linha)
-    print(Temperature("Brasilia \n"))
-    print(Temperature("Sao_paulo \n"))
-    print(Temperature("Rio_de_janeiro \n"))
+    print(Temperature("Am \n"))
+    print(Temperature("Sp \n"))
+    print(Temperature("Rj \n"))
+    print(Temperature("Rn \n"))
     print(linha)
